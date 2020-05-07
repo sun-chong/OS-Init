@@ -1,0 +1,59 @@
+# BEGIN GitHub
+140.82.112.4  github.com
+140.82.112.6  api.github.com
+140.82.114.3  gist.github.com
+140.82.113.26 live.github.com
+
+192.30.253.112 github.com
+192.30.253.113 github.com
+192.30.253.116 api.github.com
+192.30.253.117 api.github.com
+192.30.253.118 gist.github.com
+192.30.253.119 gist.github.com
+192.30.253.124 live.github.com
+192.30.253.125 live.github.com
+
+151.101.112.133 assets-cdn.github.com
+185.199.108.153 assets-cdn.github.com
+185.199.109.153 assets-cdn.github.com
+185.199.110.153 assets-cdn.github.com
+185.199.111.153 assets-cdn.github.com
+
+199.232.68.133 github.map.fastly.net
+199.232.69.194 github.global.ssl.fastly.net
+151.101.185.194 github.global.ssl.fastly.net
+
+199.232.68.133 raw.githubusercontent.com
+199.232.68.133 camo.githubusercontent.com
+199.232.68.133 gist.githubusercontent.com
+199.232.68.133 cloud.githubusercontent.com
+199.232.68.133 user-images.githubusercontent.com
+199.232.68.133 avatars0.githubusercontent.com
+199.232.68.133 avatars1.githubusercontent.com
+199.232.68.133 avatars2.githubusercontent.com
+199.232.68.133 avatars3.githubusercontent.com
+199.232.68.133 avatars4.githubusercontent.com
+199.232.68.133 avatars5.githubusercontent.com
+199.232.68.133 avatars6.githubusercontent.com
+199.232.68.133 avatars7.githubusercontent.com
+199.232.68.133 avatars8.githubusercontent.com
+
+199.232.28.133 assets-cdn.github.com
+199.232.28.133 raw.githubusercontent.com
+199.232.28.133 camo.githubusercontent.com
+199.232.28.133 gist.githubusercontent.com
+199.232.28.133 cloud.githubusercontent.com
+199.232.28.133 user-images.githubusercontent.com
+199.232.28.133 avatars0.githubusercontent.com
+199.232.28.133 avatars1.githubusercontent.com
+199.232.28.133 avatars2.githubusercontent.com
+199.232.28.133 avatars3.githubusercontent.com
+199.232.28.133 avatars4.githubusercontent.com
+199.232.28.133 avatars5.githubusercontent.com
+199.232.28.133 avatars6.githubusercontent.com
+199.232.28.133 avatars7.githubusercontent.com
+199.232.28.133 avatars8.githubusercontent.com
+
+52.216.84.19 s3.amazonaws.com
+52.216.161.149 s3.amazonaws.com
+# END GitHub
