@@ -50,6 +50,12 @@ xcode-select --install
 sudo softwareupdate -i -r
 cus_echo "已更新App Store应用" g
 
+#默认终端切换到zsh
+HAVE_ZSH=$(cat /etc/shells | grep /bin/zsh)
+if [ "$HAVE_ZSH" == "/bin/zsh" ]; then
+    chsh -s /bin/zsh
+fi
+
 #安装Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 cus_echo "已安装Homebrew" g
