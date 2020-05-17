@@ -47,7 +47,7 @@ cus_echo "已更新hosts" g
 xcode-select --install
 
 #安装App Store推荐的更新
-sudo softwareupdate -i -r
+sudo softwareupdate -ir
 cus_echo "已更新App Store应用" g
 
 #默认终端切换到zsh
@@ -63,9 +63,13 @@ cus_echo "已安装Homebrew" g
 brew install python     #安装Python最新版
 brew install zsh        #安装zsh最新版
 brew install git        #安装git最新版
+brew install hub        #安装hub命令
 brew install shellcheck #安装ShellCheck
+brew install tree       #安装tree命令
 cus_echo "已完成安装brew软件包清单" g
 brew cleanup
+
+# eval "$(hub alias -s)"  #设置hub命令git别名
 
 #安装Oh My Zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -85,14 +89,15 @@ cus_echo "已完成配置Oh My Zsh" g
 #安装应用
 brew cask install visual-studio-code #安装vscode
 brew cask install tencent-lemon      #安装Lemon
-brew cask install baiduinput         #安装百度输入法
+brew cask install sogouinput         #安装搜狗输入法
 brew cask install baidunetdisk       #安装百度网盘
 brew cask install sunlogincontrol    #安装向日葵控制端
 brew cask install iina               #安装IINA视频播放器
 brew cask install itsycal            #安装Itsycal日历
 brew cask install motrix             #安装Motrix下载器
 brew cask install iterm2             #安装iTerm2终端
-# brew cask install google-chrome #安装Chrome
+brew cask install kite               #安装Kite，Python语法提示
+# brew cask install google-chrome      #安装Chrome
 cus_echo "已完成安装brew cask应用清单" g
 
 #Python插件
