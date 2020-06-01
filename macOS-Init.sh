@@ -60,6 +60,7 @@ fi
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 cus_echo "已安装Homebrew" g
 
+brew install dotnet     #安装.NET Core
 brew install python     #安装Python最新版
 brew install zsh        #安装zsh最新版
 brew install git        #安装git最新版
@@ -69,6 +70,7 @@ brew install tree       #安装tree命令
 cus_echo "已完成安装brew软件包清单" g
 brew cleanup
 
+# hub api user            #设置hub命令的OAuth认证，需输入GitHub帐号密码
 # eval "$(hub alias -s)"  #设置hub命令git别名
 
 #安装Oh My Zsh
@@ -97,7 +99,9 @@ brew cask install itsycal            #安装Itsycal日历
 brew cask install motrix             #安装Motrix下载器
 brew cask install iterm2             #安装iTerm2终端
 brew cask install kite               #安装Kite，Python语法提示
+brew cask install virtualbox         #安装VirtualBox虚拟机
 # brew cask install google-chrome      #安装Chrome
+# brew install vitorgalvao/tiny-scripts/cask-repair #安装cask提交更新脚本
 cus_echo "已完成安装brew cask应用清单" g
 
 #Python插件
