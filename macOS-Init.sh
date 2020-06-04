@@ -60,17 +60,23 @@ fi
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 cus_echo "已安装Homebrew" g
 
-brew install dotnet     #安装.NET Core
 brew install python     #安装Python最新版
+brew install dotnet     #安装.NET Core
 brew install zsh        #安装zsh最新版
 brew install git        #安装git最新版
 brew install hub        #安装hub命令
 brew install shellcheck #安装ShellCheck
 brew install tree       #安装tree命令
+brew install figlet     #字符画支持
+# brew install vitorgalvao/tiny-scripts/cask-repair #安装cask提交更新脚本
+
 cus_echo "已完成安装brew软件包清单" g
 brew cleanup
 
-# hub api user            #设置hub命令的OAuth认证，需输入GitHub帐号密码
+cus_echo "需要输入GitHub帐号密码，以完成hub设置：" r false
+
+#设置hub命令的OAuth认证，需输入GitHub帐号密码
+hub api user
 # eval "$(hub alias -s)"  #设置hub命令git别名
 
 #安装Oh My Zsh
@@ -89,20 +95,22 @@ cat "$CUR_DIR/$ZSHRC_NAME" >~/.zshrc
 cus_echo "已完成配置Oh My Zsh" g
 
 #安装应用
-brew cask install visual-studio-code #安装vscode
-brew cask install tencent-lemon      #安装Lemon
-brew cask install sogouinput         #安装搜狗输入法
-brew cask install baidunetdisk       #安装百度网盘
-brew cask install sunlogincontrol    #安装向日葵控制端
-brew cask install iina               #安装IINA视频播放器
-brew cask install itsycal            #安装Itsycal日历
-brew cask install motrix             #安装Motrix下载器
-brew cask install iterm2             #安装iTerm2终端
-brew cask install kite               #安装Kite，Python语法提示
-brew cask install virtualbox         #安装VirtualBox虚拟机
-# brew cask install google-chrome      #安装Chrome
-# brew install vitorgalvao/tiny-scripts/cask-repair #安装cask提交更新脚本
+brew cask install visual-studio-code        #安装VS Code
+brew cask install tencent-lemon             #安装Lemon
+brew cask install sogouinput                #安装搜狗输入法
+brew cask install baidunetdisk              #安装百度网盘
+brew cask install sunlogincontrol           #安装向日葵控制端
+brew cask install iina                      #安装IINA视频播放器
+brew cask install itsycal                   #安装Itsycal日历
+brew cask install motrix                    #安装Motrix下载器
+brew cask install iterm2                    #安装iTerm2终端
+brew cask install virtualbox                #安装VirtualBox虚拟机
+brew cask install virtualbox-extension-pack #安装VirtualBox扩展包
+# brew cask install google-chrome       #安装Chrome
+# brew cask install kite                #安装Kite，Python语法提示
+
 cus_echo "已完成安装brew cask应用清单" g
+brew cleanup -s #清理brew缓存
 
 #Python插件
 pip3 install flake8
@@ -115,5 +123,6 @@ git config --global color.diff auto
 git config --global color.branch auto
 git config --global color.interactive auto
 
+figlet -kf big "macOS - Init"
 cus_echo "全部运行完毕" r
 say Init is complete
